@@ -3,9 +3,7 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
-  ul
-  each movie in movies
-    li= movie.title
-      img(src=movie.logo)
-    
-      
+  div
+    input#search(type='text' placeholder='Movie Title...')
+  div#results
+  script(src='/javascripts/search.js')
